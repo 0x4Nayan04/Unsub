@@ -1,0 +1,143 @@
+/* Core styles */
+body {
+  font-family: 'Roboto', Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  line-height: 1.5 !important;
+  color: rgb(241, 241, 241) !important;
+}
+
+/* Base button styles */
+.easy-unsub-button,
+.channel-page-unsub,
+.videos-page-unsub,
+.bulk-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  height: 36px !important;
+  min-width: 80px !important;
+  padding: 0 16px !important;
+  margin: 0 0 0 8px !important;
+  
+  /* Visual */
+  background-color: rgb(220 38 38) !important;
+  color: rgb(241, 241, 241) !important;
+  border: none !important;
+  border-radius: 18px !important;
+  font-family: 'Roboto', Arial, sans-serif !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  
+  /* Interaction */
+  cursor: pointer !important;
+  transition: all 0.2s ease !important;
+  
+  /* Position */
+  position: static !important;
+  z-index: 2 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
+
+/* Hover and active states */
+.easy-unsub-button:hover,
+.channel-page-unsub:hover,
+.videos-page-unsub:hover,
+.bulk-button:hover {
+  background-color: rgb(185 28 28) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: 0 4px 8px rgba(220, 38, 38, 0.3) !important;
+}
+
+.easy-unsub-button:active,
+.channel-page-unsub:active,
+.videos-page-unsub:active,
+.bulk-button:active {
+  transform: translateY(1px) !important;
+  box-shadow: none !important;
+  background-color: rgb(153 27 27) !important;
+}
+
+/* Icon styling */
+.unsub-icon {
+  width: 16px;
+  height: 16px;
+  stroke: currentColor;
+  stroke-width: 2;
+  fill: none;
+  margin-right: 4px !important;
+}
+
+/* Bulk controls */
+.bulk-controls {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  padding: 16px !important;
+  margin: 8px 16px !important;
+  background: rgba(0, 0, 0, 0.05) !important;
+  border-radius: 8px !important;
+}
+
+/* Checkbox styling */
+.channel-checkbox-wrapper {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  margin-right: 8px !important;
+}
+
+.channel-checkbox {
+  width: 20px !important;
+  height: 20px !important;
+  margin: 0 !important;
+  cursor: pointer !important;
+  appearance: none;
+  border: 2px solid #e53e3e;
+  border-radius: 4px;
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.channel-checkbox:checked {
+  background-color: #e53e3e;
+  border-color: #e53e3e;
+}
+
+/* Channel renderer */
+ytd-channel-renderer {
+  display: grid !important;
+  grid-template-columns: auto 1fr auto auto !important;
+  gap: 16px !important;
+  align-items: center !important;
+  padding: 16px !important;
+  margin: 8px 0 !important;
+  border-radius: 8px !important;
+  background-color: rgba(255, 255, 255, 0.03) !important;
+  transition: background-color 0.2s ease !important;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .easy-unsub-button,
+  .channel-page-unsub,
+  .videos-page-unsub,
+  .bulk-button {
+    font-size: 13px !important;
+    padding: 0 12px !important;
+    min-width: 72px !important;
+  }
+
+  .bulk-controls {
+    flex-direction: column !important;
+    padding: 12px !important;
+  }
+
+  ytd-channel-renderer {
+    grid-template-columns: 40px 1fr auto !important;
+    gap: 12px !important;
+    padding: 12px !important;
+  }
+}
