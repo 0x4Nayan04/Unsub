@@ -24,6 +24,10 @@ With YouTube Easy Unsubscribe, this process is simplified to a single click!
 **After:**
 ![![](image.png)
 ](icons/image.png)
+## 🪧 Demo Video
+
+https://github.com/user-attachments/assets/6bdd55e6-9283-42ae-8920-41a9f9ee878c
+
 
 ## 🚀 Getting Started
 
